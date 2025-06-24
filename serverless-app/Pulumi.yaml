@@ -1,0 +1,16 @@
+name: ${PROJECT}
+description: ${DESCRIPTION}
+runtime: nodejs
+
+template:
+  description: A TypeScript program to deploy Azure Function Apps with managed storage and security
+  config:
+    azure-native:location:
+      description: The Azure region to deploy into
+      default: westeurope
+    maximumInstanceCount:
+      description: Maximum number of instances for scaling
+      default: 100
+    instanceMemoryMB:
+      description: Memory allocation per instance in MB
+      default: 2048
